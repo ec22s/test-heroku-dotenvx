@@ -32,7 +32,7 @@ npm i
 ```sh
 heroku login
 heroku apps:create MY_APP_NAME
-export $(heroku config -s --app MY_APP_NAME | xargs -L 1)
+export $(heroku config -s --app=MY_APP_NAME | xargs -L 1)
 dotenvx run -- node index.js
 # OPEN http://localhost:3001
 ```
